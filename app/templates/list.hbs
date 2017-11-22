@@ -1,0 +1,11 @@
+
+{{outlet}}
+
+<h1>Listado</h1>
+      <ul>
+        {{#each model as |user|}}
+            <li>{{user.username}}</li>
+        {{else}}
+          <div>No hay usuarios found</div>
+        {{/each}}
+      </ul>
